@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dineth Basura — 3D Portfolio
 
 Personal 3D developer portfolio built with **React + Vite**, **React Three Fiber/Three.js**, **TailwindCSS**, and **Framer Motion**.
@@ -89,3 +90,6 @@ This portfolio is based on a 3D portfolio starter and then customized with my pe
 
 ## License
 If you’re reusing this repo, keep attribution where appropriate and replace personal content/assets with your own.
+=======
+
+>>>>>>> e30ac8e67bd94de5f446eedbdb80b385dd9b05b1
