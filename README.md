@@ -1,116 +1,91 @@
-# 🚀 3D Developer Portfolio
+# Dineth Basura — 3D Portfolio
 
-A modern, animated 3D developer portfolio built with React, Three.js, TailwindCSS, and motion effects — designed to help you stand out and showcase your skills creatively.
+Personal 3D developer portfolio built with **React + Vite**, **React Three Fiber/Three.js**, **TailwindCSS**, and **Framer Motion**.
 
-![3d Portfolio Screenshot GitHub](https://github.com/user-attachments/assets/9b0ed20e-074e-4f2a-81d8-20c9da751e9e)
+This site showcases:
+- My **projects** (with “Read more” details)
+- **Certifications & Achievements** (repurposed from testimonials)
+- A **Download CV** button
+- Contact section with **copy-to-clipboard email**
 
----
+## Live Links
+- LinkedIn: https://www.linkedin.com/in/dineth-basura-00711035a/
+- GitHub: https://github.com/Dineth-Basura
 
-## 📚 Table of Contents
+## Features
+- 3D hero visuals using **React Three Fiber** and **Drei**
+- Smooth UI animations and section transitions with **Framer Motion**
+- Responsive layout styled with **TailwindCSS**
+- Projects section with detailed modal/“Read more” view
+- Certifications & Achievements section
+- CV download via navbar button (served from `public/assets/socials/cv.pdf`)
 
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [Assets](#-assets)
-- [Contact Me](#-contact-me)
-- [Suggestions or Feedback](#-suggestions-or-feedback)
-- [Like This Project?](#-like-this-project)
+## Tech Stack
+- **React**
+- **Vite**
+- **TailwindCSS**
+- **Three.js / React Three Fiber / Drei**
+- **Framer Motion**
 
----
-
-## ✨ Features
-
-- 🔥 3D visuals powered by **React Three Fiber** and **Drei**
-- ⚡ Smooth transitions and scroll-based animations using **Framer Motion**
-- 🎨 Clean, responsive UI with **TailwindCSS**
-- 💌 Working contact form using **EmailJS**
-- 🧱 Beautiful UI enhancements with **Aceternity UI** and **Magic UI**
-- 🚀 Lightning-fast development with **Vite**
-
----
-
-## 🛠 Tech Stack
-
-| Tech              | Description                           |
-|-------------------|---------------------------------------|
-| React             | Front-end JavaScript library          |
-| Vite              | Fast bundler and dev environment      |
-| TailwindCSS       | Utility-first CSS framework           |
-| React Three Fiber | 3D rendering with Three.js in React   |
-| Drei              | Helpers and abstractions for R3F      |
-| Framer Motion     | Animation library for React           |
-| EmailJS           | Form handling and email integration   |
-| Aceternity UI     | Custom UI components                  |
-| Magic UI          | Prebuilt UI elements and design extras|
-
----
-
-## 📁 Project Structure
-
+## Project Structure
 ```bash
-├── public/
-│   ├── assets/             # Images, textures, models
-│   ├── models/             # 3D Astronaut model
-│   └── vite.svg
-├── src/
-│   ├── components/         # Reusable components
-│   ├── constants/          # Reusable datas
-│   ├── sections/           # Portfolio sections (Hero, About, etc.)
-│   ├── App.jsx             # Main app file
-│   ├── index.css           # Tailwind css
-│   └── main.jsx            # Entry point
-├── tailwind.config.js
-└── vite.config.js
+public/
+  assets/
+    socials/
+      cv.pdf
+    projects/
+    logos/
+    frameworksLogo/
+  models/
+src/
+  components/
+  constants/
+  hoc/
+  sections/
+  App.jsx
+  main.jsx
+  index.css
 ```
 
----
-
-## 🚀 Getting Started
-1. Clone the Repository
-```bash
-git clone https://github.com/Ali-Sanati/Portfolio.git
-cd Portfolio
-```
-2. Install Dependencies
+## Getting Started (Local Development)
+### 1) Install dependencies
 ```bash
 npm install
 ```
-3. Run the Development Server
+
+### 2) Start the dev server
 ```bash
 npm run dev
 ```
-The app will be available at http://localhost:5173.
 
----
+Vite will print the local URL (usually `http://localhost:5173`).
 
-## 🔗 Assets
-Assets used in the project can be found [here](https://github.com/user-attachments/files/19820923/public.zip)
+### 3) Build for production
+```bash
+npm run build
+```
 
----
+### 4) Preview the production build
+```bash
+npm run preview
+```
 
-## 📬 Contact Me
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/ali.sanatidev/reels/) 
-[![Static Badge](https://img.shields.io/badge/Youtube-%23FF0033?style=flat&logo=youtube)](https://www.youtube.com/channel/UCZhtUWTtk3bGJiMPN9T4HWA)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ali-sanati/) 
+## Customization Notes
+Most content is driven from:
+- `src/constants/index.js` (services, technologies, education/experience, certifications, projects)
 
----
+Assets used by the UI live in:
+- `public/assets/**`
 
-## 💡 Suggestions or Feedback?
-Leave a comment on the [YouTube video](https://youtu.be/S9UQItTpwUQ) or open an issue here on GitHub.<br/>
-👉 What should I build next?
+### CV Download
+Place your CV at:
+- `public/assets/socials/cv.pdf`
 
-- A beautiful Landing Page
+The navbar button should link to it as:
+- `/assets/socials/cv.pdf`
 
-- A complete E-commerce site
+## Credits
+This portfolio is based on a 3D portfolio starter and then customized with my personal content and sections.
 
-- A fun App Clone (YouTube, Netflix, etc.)
-
-Or another interactive Portfolio
-
-Let me know!
-
----
-
-## ⭐ Like This Project?
-Star the repo and [subscribe](https://www.youtube.com/channel/UCZhtUWTtk3bGJiMPN9T4HWA??sub_confirmation=1) to the YouTube channel for more dev content!
+## License
+If you’re reusing this repo, keep attribution where appropriate and replace personal content/assets with your own.
